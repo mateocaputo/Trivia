@@ -3,28 +3,28 @@ let aciertos = 0;
 let fallos = 0;
 
 btnFinalizar.onclick = function() {
-	if (pr1r2.checked == true) {
+	if (pr1r3.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr2r1.checked == true) {
+	if (pr2r2.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr3r5.checked == true) {
+	if (pr3r1.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr4r3.checked == true) {
+	if (pr4r4.checked == true) {
 		aciertos+=1;
 	}
 	else {
@@ -45,35 +45,35 @@ btnFinalizar.onclick = function() {
 		fallos+=1;
 	}
 
-	if (pr7r3.checked == true) {
+	if (pr7r2.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr8r5.checked == true) {
+	if (pr8r1.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr9r4.checked == true) {
+	if (pr9r2.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (pr10r1.checked == true) {
+	if (pr10r3.checked == true) {
 		aciertos+=1;
 	}
 	else {
 		fallos+=1;
 	}
 
-	if (aciertos==10) {
+/*	if (aciertos==10) {
 		document.getElementById('total').innerHTML = "Felicitaciones, eres un genio";
 	}
 	else if (aciertos>=7) {
@@ -87,7 +87,7 @@ btnFinalizar.onclick = function() {
 	}
 	else {
 		document.getElementById('total').innerHTML = "Has fallado";
-	}
+	}*/
 	document.getElementById('acierto').innerHTML = aciertos;
 	document.getElementById('fallo').innerHTML = fallos;
 
