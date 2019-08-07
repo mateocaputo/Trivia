@@ -38,7 +38,7 @@ btnFinalizar.onclick = function() {
 		fallos+=1;
 	}
 
-	if (pr6r1.checked == true) {
+	if (pr6r3.checked == true) {
 		aciertos+=1;
 	}
 	else {

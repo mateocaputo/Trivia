@@ -3,83 +3,96 @@
 <head lang="es" dir="ltr">
     <meta charset="utf-8">
     <title>Trivia </title>
-	<link href="styleprueba.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-  <font color="white">
-  <h1>Trabajo de vacaciones: Trivia</h1>
+  <div class="h1">
+  <h1>Bienvenido a Trivia!!!<h1>
+  </div>
   </font>
   <form id="quiz" name="quiz">
-
+  <div id="estructura">
+<div class="pregunta1">
   <p>1-¿Quien es el actual precidente de Argentina?</p>
   <input type="radio" id="pr1r1" name="pregunta1" value="opcion2"> Cristina
   <input type="radio" id="pr1r2" name="pregunta1" value="opcion3"> Massa
   <input type="radio" id="pr1r3" name="pregunta1" value="opcion1"> Macri
   <input type="radio" id="pr1r4" name="pregunta1" value="opcion4"> Scioli
-
+</div>
+<div class="pregunta2">
   <p>2-¿En que año se jugo el anterior mundial?</p>
   <input type="radio" id="pr2r1" name="pregunta2" value="opcion2"> 2010
   <input type="radio" id="pr2r2" name="pregunta2" value="opcion3"> 2014
   <input type="radio" id="pr2r3" name="pregunta2" value="opcion1"> 2002
   <input type="radio" id="pr2r4" name="pregunta2" value="opcion4"> 2008
-
+</div>
+<div class="pregunta3">
   <p>3-¿Donde se jugaron los juegos Paramericanos este año?</p>
   <input type="radio" id="pr3r1" name="pregunta3" value="opcion1"> Lima
   <input type="radio" id="pr3r2" name="pregunta3" value="opcion2"> Bogota
   <input type="radio" id="pr3r3" name="pregunta3" value="opcion3"> Buenos Aires
   <input type="radio" id="pr3r4" name="pregunta3" value="opcion4"> San Luis
-
+</div>
+  <div class="pregunta4">
   <p>4-Como se llama el personaje de 4 brazos, que aparece en Mortal combat ?</p>
   <input type="radio" id="pr4r1" name="pregunta4" value="opcion2"> Rayden
   <input type="radio" id="pr4r2" name="pregunta4" value="opcion3"> Gotzilla
   <input type="radio" id="pr4r3" name="pregunta4" value="opcion4"> Subzero
   <input type="radio" id="pr4r4" name="pregunta4" value="opcion1"> Goro
-
+</div>
+<div class="pregunta5">
   <p>5-¿Cuantos cuartos tiene un partido de basket?</p>
   <input type="radio" id="pr5r1" name="pregunta5" value="opcion2"> 2 cuartos
   <input type="radio" id="pr5r2" name="pregunta5" value="opcion3"> 8 cuartos
   <input type="radio" id="pr5r3" name="pregunta5" value="opcion4"> 6 cuartos>
   <input type="radio" id="pr5r4" name="pregunta5" value="opcion1"> 4 cuartos
+  </div>
   </form>
-
-  <form id="quiz2" name="quiz2">
+   <div class="pregunta6">
   <p>6-¿Cual es la carta con mayor "valor" en el truco?</p>
   <input type="radio" id="pr6r1" name="pregunta6" value="opcion2"> 7 de espada
   <input type="radio" id="pr6r2" name="pregunta6" value="opcion4"> 7 de oro
   <input type="radio" id="pr6r3" name="pregunta6" value="opcion1"> 1 de espada
   <input type="radio" id="pr6r4" name="pregunta6" value="opcion3"> 1 de basto
-
+   </div>
+<div class="pregunta7">
   <p>7-¿Que aplicacion tiene con Logo una camara?</p>
   <input type="radio" id="pr7r1" name="pregunta7" value="opcion2"> Twiter
   <input type="radio" id="pr7r2" name="pregunta7" value="opcion1"> Instagram
   <input type="radio" id="pr7r3" name="pregunta7" value="opcion3"> Facebook
   <input type="radio" id="pr7r4" name="pregunta7" value="opcion4"> Wahatsapp
-
+</div>
+<div class="pregunta8">
   <p>8-¿Que significa printer en Ingles</p>
   <input type="radio" id="pr8r1" name="pregunta8" value="opcion1"> Impresora
   <input type="radio" id="pr8r2" name="pregunta8" value="opcion2"> Auriculares
   <input type="radio" id="pr8r3" name="pregunta8" value="opcion3"> Pantalla o Monitor
   <input type="radio" id="pr8r4" name="pregunta8" value="opcion4"> Camara
-
+</div>
+<div class="pregunta9">
   <p>9-¿Cual es mi segundo Nombre?</p>
   <input type="radio" id="pr9r1" name="pregunta9" value="opcion2"> Ramiro
   <input type="radio" id="pr9r2" name="pregunta9" value="opcion1"> Ezequiel
   <input type="radio" id="pr9r3" name="pregunta9" value="opcion3"> Matias
   <input type="radio" id="pr9r4" name="pregunta9" value="opcion4"> Mateo
-
+</div>
+<div class="pregunta10">
   <p>10-¿Cuanto dura un partido de futbol?</p>
   <input type="radio" id="pr10r1" name="pregunta10" value="opcion2"> 85 minutos
   <input type="radio" id="pr10r2" name="pregunta10" value="opcion3"> 45 minutos
   <input type="radio" id="pr10r3" name="pregunta10" value="opcion1"> 90 minutos
   <input type="radio" id="pr10r4" name="pregunta10" value="opcion4"> 60 minutos
-  <p></p>
-  <button id="btn-1" type="button" name="button">Finalizar</button>
-
+</div>
+</div>
+<div id="boton">
+  <button id="btn-1" type="button" name="button"><h1>Finalizar</h1></button>
+<div>
+<div class="Acierto">
   <h2>Acertadas: <span id="acierto"></span></h2>
 <hr />
 <h2>Erradas: <span id="fallo"></span></h2>
-
+</div>
   </form>
   <div id = "after_submit">
   <p id = "mensajes"></p>
@@ -88,9 +101,12 @@
   </div>
   <footer>
   <font color= "white">
-  Matias Gabriel Pastor<br>
-  4ª1ª Computacion<br>
-  <a href="https://github.com/matias-pastor/Trabajo-de-vacaciones-Trivia"> Repositorio del trabajo</a>
+  <div id="Nombre">
+  <h2>Mateo Ezequiel Caputo 4ª1ª Computacion</h2> <br>
+  </div>
+  <div id="LINK">
+  <a href="https://github.com/mateocaputo/trivia"><h2> Repositorio del trabajo</h2></a>
+  </div>
   </font>
   </footer>
 <script src="node.js"></script>
