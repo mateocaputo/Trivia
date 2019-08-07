@@ -1,42 +1,96 @@
-jugar();
-var indicie_respuesta_correcta;
-function jugar(){
+let btnFinalizar = document.getElementById('btn-1');
+let aciertos = 0;
+let fallos = 0;
 
-var indice_aleatorio = Math.floor(Math.random()*preguntas.length);
+btnFinalizar.onclick = function() {
+	if (pr1r2.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
 
-var respuestas_posibles = respuestas[indice_aleatorio];
+	if (pr2r1.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
 
-var posiciones = [0,1,2,3];
-var respuestas_reordenadas = [];
+	if (pr3r5.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
 
-var ya_se_metio =false;
+	if (pr4r3.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
 
-for(i in respuestas_posibles){
-    var posicion_aleatoria = Math.floor(Math.random()*posiciones.length);
-    if(posicion_aleatoria==0 && ya_se_metio == false){
-	    indicie_respuesta_correcta =i;
-		ya_se_metio= true;
-}
-respuestas_reordenadas[i] = respuestas_posibles[posiciones[
-   posicion_aleatoria]];
-posiciones.splice(posicion_aleatoria, 1);
-}
+	if (pr5r4.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
 
-var txt_respuestas="";
-for(i in respuestas_reordenadas){
-    txt_respuestas += '<input type="radio" name"pp" value="'+i+'"><label>'+respuestas_reordenadas[i]+'</label>';
+	if (pr6r1.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
+
+	if (pr7r3.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
+
+	if (pr8r5.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
+
+	if (pr9r4.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
+
+	if (pr10r1.checked == true) {
+		aciertos+=1;
+	}
+	else {
+		fallos+=1;
+	}
+
+	if (aciertos==10) {
+		document.getElementById('total').innerHTML = "Felicitaciones, eres un genio";
+	}
+	else if (aciertos>=7) {
+		document.getElementById('total').innerHTML = "Felicitaciones, eres una persona muy inteligente";
+	}
+	else if (aciertos==6) {
+		document.getElementById('total').innerHTML = "Felicitaciones, se encuentra por encima del promedio";
+	}
+	else if (aciertos==5) {
+		document.getElementById('total').innerHTML = "Casi lo logras, sigue practicando. ";
+	}
+	else {
+		document.getElementById('total').innerHTML = "Has fallado";
+	}
+	document.getElementById('acierto').innerHTML = aciertos;
+	document.getElementById('fallo').innerHTML = fallos;
+
+	aciertos = 0;
+	fallos = 0;
 }
-document.getElementById("respuestas").innerHTML = txt_respuestas;
-document.getElementById("pregunta").innerHTML = preguntas[indice_aleatorio];
-}
-function comprobar (){
-var respuesta= i;
-if(respuesta==indicie_respuesta_correcta)
-{alert("correcta");
-}else if(respuesta!=indicie_respuesta_correcta)
-{
-alert("mal");
-}
-jugar();
-}
-</script>
